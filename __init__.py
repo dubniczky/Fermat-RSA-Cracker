@@ -1,5 +1,5 @@
-from .insecure import insecurePrimePair
-from .insecure import getSimilarPrime
+from .insecure import insecure_prime_pair
+from .insecure import get_similar_prime
 
 from .load_key import public as load_public
 
