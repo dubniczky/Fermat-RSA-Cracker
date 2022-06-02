@@ -1,6 +1,6 @@
 from math import isqrt
 
-def crackRSA(n, e, limit):
+def crack_rsa(n, e, limit):
     a = int(isqrt(n) + 1)
     b = -1
     steps = 0
@@ -13,9 +13,9 @@ def crackRSA(n, e, limit):
             break
         a += 1
 
-    if (b == -1):
+    if b == -1:
         return None
-    
+
     p = a + b
     q = a - b
     phi = (p-1) * (q-1)
