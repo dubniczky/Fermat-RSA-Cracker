@@ -14,6 +14,9 @@ class CrackResult():
         self.phi = phi
         self.steps = steps
 
+    def __str__(self) -> str:
+        return f'### d:\n{self.d}\n### p:\n{self.p}\n### q:\n{self.q}\n### phi:\n{self.phi}\n### steps:\n{self.steps}\n'
+
 
 def crack_rsa(n: int, e: int, *, rounds: int = 100, offset: int = 0) -> CrackResult:
     if n < 1:
@@ -29,11 +32,11 @@ def crack_rsa(n: int, e: int, *, rounds: int = 100, offset: int = 0) -> CrackRes
     b = -1
     steps = 0
 
-    for i in range(offset, offset + rounds):
+    for _ in range(offset, offset + rounds):
         b2 = int(a**2 - n)
         if b2 == isqrt(b2) ** 2:
             b = int(isqrt(b2))
-            steps = i
+            steps += 1
             break
         a += 1
 
