@@ -15,12 +15,12 @@ class CrackResult():
         self.steps = steps
 
 
-def crack_rsa(n: int, e: int, *, limit: int = 2**16, offset: int = 0) -> CrackResult:
+def crack_rsa(n: int, e: int, *, rounds: int = 100, offset: int = 0) -> CrackResult:
     if n < 1:
         return None
     if e < 2:
         return None
-    if limit < 1:
+    if rounds < 1:
         return None
     if offset < 0:
         return None
@@ -29,7 +29,7 @@ def crack_rsa(n: int, e: int, *, limit: int = 2**16, offset: int = 0) -> CrackRe
     b = -1
     steps = 0
 
-    for i in range(offset, limit):
+    for i in range(offset, offset + rounds):
         b2 = int(a**2 - n)
         if b2 == isqrt(b2) ** 2:
             b = int(isqrt(b2))
