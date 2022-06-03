@@ -22,10 +22,13 @@ if __name__ == '__main__':
     import sys
     args = sys.argv[1:]
     if len(args) < 2:
-        print("[BITS] [DIFF] - generates a prime pair of BITS length with at least DIFF number of matching bits")
+        print('Generates an insecure prime pair')
+        print('[BITS] [DIFF]')
+        print('   - BITS: prime bit length')
+        print('   - DIFF: maximum difference in last bits')
         sys.exit(1)
 
-    p, q = insecure_prime_pair( int(args[0]), int(args[1]) )
-    print(p)
+    pair = insecure_prime_pair( int(args[0]), int(args[1]) )
+    print(pair[0])
     print()
-    print(q)
+    print(pair[1])
