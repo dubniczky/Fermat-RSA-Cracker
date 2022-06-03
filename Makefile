@@ -1,7 +1,7 @@
 .PHONY: lint test
 
 lint:
-	pylint ../rsacracker
+	pylint ./src/rsacracker
 
 test:
 	python test.py
