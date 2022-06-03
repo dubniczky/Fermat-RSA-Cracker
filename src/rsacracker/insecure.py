@@ -1,3 +1,7 @@
+'''
+Functions for generating deliberately insecure random prime pairs for demonstration purposes.
+'''
+
 from Crypto.Util.number import getPrime
 from Crypto.Util.number import isPrime
 from Crypto.Util.number import getRandomNBitInteger
