@@ -4,4 +4,4 @@ lint:
 	pylint ./src/rsacracker
 
 test:
-	python test.py
+	python src/test.py
