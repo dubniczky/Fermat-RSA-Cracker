@@ -32,13 +32,13 @@ def crack_rsa(n: int, e: int, *, rounds: int = 100, offset: int = 0) -> CrackRes
     b = -1
     steps = 0
 
-    for _ in range(offset, offset + rounds):
+    for _ in range(offset, offset + rounds + 1):
         b2 = int(a**2 - n)
         if b2 == isqrt(b2) ** 2:
             b = int(isqrt(b2))
-            steps += 1
             break
         a += 1
+        steps += 1
 
     if b == -1:
         return None
