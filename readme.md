@@ -25,3 +25,7 @@ In this case, if $`N=cd`$ is a factorization of $`N`$, then:
 $`N=(\frac{c+d}{2})^2-(\frac{c-d}{2})^2`$
 
 Because $`N`$ is odd, it means $`c`$ and $`d`$ are also going to be odd.
+
+## License
+
+Added general MIT license ([details](/LICENSE))
