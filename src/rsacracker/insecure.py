@@ -1,4 +1,5 @@
 '''
+DO NOT USE FOR KEY GENERATION!
 Functions for generating deliberately insecure random prime pairs for demonstration purposes.
 '''
 
