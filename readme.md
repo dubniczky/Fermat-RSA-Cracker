@@ -2,6 +2,12 @@
 
 Python script to crack RSA keys generated with insufficiently random prime number generators
 
+## Support ❤️
+
+If you find the project useful, please consider supporting, or contributing.
+
+[!["Buy Me A Coffee"](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://www.buymeacoffee.com/dubniczky)
+
 ## Introduction
 
 A python implementation of RSA key cracking using Fermat's factorization algorithm. The algorithm allows the efficient calculation of the prime factors of a composite number that is a product of two close primes.
