@@ -12,19 +12,19 @@ Close in our case means at least half the bits of a key are equivalent, which is
 
 The algorithm is based on the representation of an odd integer as de difference of two squares:
 
-$`N=a^2-b^2`$
+$N=a^2-b^2`$
 
 Which can be algebraically refactored to:
 
-$`N=(a+b)(a-b)`$
+$N=(a+b)(a-b)$
 
-If neither factor equals one, then we can conclude that this is a proper factorization of $`N`$
+If neither factor equals one, then we can conclude that this is a proper factorization of $N$
 
-In this case, if $`N=cd`$ is a factorization of $`N`$, then:
+In this case, if $N=cd$ is a factorization of $N$, then:
 
-$`N=(\frac{c+d}{2})^2-(\frac{c-d}{2})^2`$
+$N=(\frac{c+d}{2})^2-(\frac{c-d}{2})^2$
 
-Because $`N`$ is odd, it means $`c`$ and $`d`$ are also going to be odd.
+Because $N$ is odd, it means $c$ and $d$ are also going to be odd.
 
 ## License
 
